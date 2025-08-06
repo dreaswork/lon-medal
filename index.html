@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="module" src="main.js" defer></script> -->
+    <!-- Three.js and GLTFLoader via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.min.js"></script>
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <!-- login screen -->
+    <div id="login-screen" class="screen">
+        <h1>Who are you?</h1>
+        <input type="text" id="name-input" placeholder="Guess which name :>">
+        <button id="login-button">Enter</button>
+        <img src="assets/cloud1.png" alt="cloud" class="cloud1">
+        <img src="assets/cloud1.png" alt="cloud" class="cloud2">
+        <img src="assets/cloud1.png" alt="cloud" class="cloud3">
+        <img src="assets/cloud1.png" alt="cloud" class="cloud4">
+    </div>
+
+    <!-- congrats screen -->
+    <div id="congrats-screen" class="screen hidden">
+        <img src="assets/Congratulations!.png" alt="congrats">
+        <p>You have received 3 medals from the almighty ME !</p>
+        <button id="view-button">Nice!</button>
+    </div>
+
+    <!-- 3d interaction -->
+    <div id="medal-screen" class="screen hidden">
+        <div id="medal-container">
+            <img id="medal-img" src="" alt="medal image">
+        </div>
+        <img id="next-button" src="assets/nextbutton.png" alt="next" class="hidden">
+    </div>
+
+    <!-- confetti -->
+    <canvas id="confetti-canvas"></canvas>
+</body>
+</html>
