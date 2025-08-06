@@ -85,8 +85,9 @@ button:hover {
   user-select: none;
   pointer-events: none;
   animation: floatCloudRight 8s linear infinite;
-  top: 80px;
+  top: 30px;
   left: 10px;
+  z-index: 0;
 }
 
 .cloud2 {
@@ -96,8 +97,9 @@ button:hover {
   user-select: none;
   pointer-events: none;
   animation: floatCloudLeft 20s linear infinite;
-  top: 180px;
+  top: 100px;
   right: 30px;
+  z-index: 0;
 }
 
 .cloud3 {
@@ -107,7 +109,7 @@ button:hover {
   user-select: none;
   pointer-events: none;
   animation: floatCloudRight 20s linear infinite;
-  bottom: 50px;
+  bottom: 0;
   left: 40px;
 }
 
@@ -118,7 +120,7 @@ button:hover {
   user-select: none;
   pointer-events: none;
   animation: floatCloudLeft 8s linear infinite;
-  bottom: 180px;
+  bottom: 100px;
   right: 10px;
 }
 
